@@ -11,9 +11,6 @@ $ npm install --global journapi-cli
 ## Usage
 
 ```bash
-// {optional}
-// [required]
-
 $ journal --help
 	📓 Usage:
 	  $ journal Your message
@@ -26,7 +23,7 @@ $ journal --help
 	  --list     Read your journal from this CLI
 
 	👁 Examples:
-	  $ journal --key Mrq5wMtD1yMX6gh694ORhgtxaYZtkAFWX3pko4Do
-	  $ journal --api https://myjournapiinstance.com/api
+	  $ journal --key Mrq5wMtD1yMX6gh694ORhgtxaYZtkAFWX3pko4Do // This is a dummy key.
+	  $ journal --api https://myjournapiinstance.com/api // Your self-hosted URL; the default is already set.
 	  $ journal I learned how to create a CLI
 ```
