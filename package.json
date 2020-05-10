@@ -1,6 +1,6 @@
 {
  "name": "journapi-cli",
- "version": "1.0.0",
+ "version": "1.0.3",
  "description": "📓 Write your in your bullet journal through CLI",
  "license": "MIT",
  "repository": "Tahul/journapi-cli",
@@ -16,7 +16,7 @@
   "node": ">=8"
  },
  "files": [
-  "cli.js"
+  "cli.js", "requests.js", "utils.js", "env.json"
  ],
  "keywords": [
   "cli",

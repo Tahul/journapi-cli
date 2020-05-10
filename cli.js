@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 "use strict";
 const meow = require("meow");
-const envFile = "./env.json";
+const envFile = `${__dirname}/env.json`;
 const env = require(envFile);
 const term = require("terminal-kit").terminal;
 const iconv = require("iconv-lite");
@@ -35,12 +35,12 @@ const cli = meow(
 				isMultiple: false,
 			},
 			key: {
-				type: "string",
+				type: ["string", "boolean"],
 				alias: "k",
 				isMultiple: false,
 			},
 			api: {
-				type: "string",
+				type: ["string", "boolean"],
 				alias: "a",
 				isMultiple: false,
 			},
@@ -54,7 +54,7 @@ const cli = meow(
 if (cli.flags.site) {
 	opn(env.api.replace("/api", ""));
 
-	term.green("📓 Opening the webapp linked to that CLI...");
+	term.green("📓 Opening the webapp linked to that CLI...\n");
 
 	return;
 }
@@ -62,7 +62,11 @@ if (cli.flags.site) {
 /**
  * Set the key
  */
-if (cli.flags.key && cli.flags.key !== "") {
+if (cli.flags.key) {
+	if (cli.flags.key !== "") {
+		return term.red("📓 You must specify a key using the --key parameter!\n");
+	}
+
 	env.key = cli.flags.key;
 
 	updateSettings(
@@ -78,7 +82,11 @@ if (cli.flags.key && cli.flags.key !== "") {
 /**
  * Set the API url
  */
-if (cli.flags.api && cli.flags.api !== "") {
+if (cli.flags.api) {
+	if (cli.flags.api !== "") {
+		return term.red("📓 You must specify an url using the --api parameter!\n");
+	}
+
 	env.api = cli.flags.api;
 
 	updateSettings(
