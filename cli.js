@@ -63,7 +63,7 @@ if (cli.flags.site) {
  * Set the key
  */
 if (cli.flags.key) {
-	if (cli.flags.key !== "") {
+	if (cli.flags.key === "" || cli.flags.key === true) {
 		return term.red("📓 You must specify a key using the --key parameter!\n");
 	}
 
@@ -83,7 +83,7 @@ if (cli.flags.key) {
  * Set the API url
  */
 if (cli.flags.api) {
-	if (cli.flags.api !== "") {
+	if (cli.flags.api === "" || cli.flags.api === true) {
 		return term.red("📓 You must specify an url using the --api parameter!\n");
 	}
 
