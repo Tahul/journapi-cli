@@ -7,21 +7,21 @@ Write your in your bullet journal through CLI. 👨‍💻
 
 This is my first CLI, if you have any advice, you can open an issue! :)
 
-## Stack
+## 💻 Stack
 
-I'm using the following libraries:
+I'm using the following libraries / templates:
 - [NodeJS CLI Boilerplate](https://github.com/sindresorhus/node-cli-boilerplate)
 - [Meow](https://github.com/sindresorhus/meow)
 - [Terminal Kit](https://www.npmjs.com/package/terminal-kit)
 - [Axios](https://github.com/axios/axios)
 
-## Install
+## ⌨️ Install
 
 ```
 $ npm install --global journapi-cli
 ```
 
-## Usage
+## 🛠 Usage
 
 ```bash
 $ journal --help
@@ -41,7 +41,7 @@ $ journal --help
 	  $ journal I learned how to create a CLI
 ```
 
-##🔗 Others links
+## 🔗 Others links
 
 - 🎩 [Alfred Workflow](https://www.notion.so/Journapi-Alfred-workflow-5af3174c7e174b9d8f9a823570dd529b)
 - ⌨️ [The API](https://github.com/Tahul/journapi)
