@@ -15,16 +15,18 @@ $ npm install --global journapi-cli
 // [required]
 
 $ journal --help
+	📓 Usage:
+	  $ journal Your message
 
-  Usage
-    $ journal {options} [arguments]
+	🛠 Options:
+	  --site     Open the web app
+	  --help     Show the help of your journal
+	  --key      Set the API key for this CLI
+	  --api      Set the API url for this CLI
+	  --list     Read your journal from this CLI
 
-  Options
-    --key [your api key] Define your API key
-    --list
-
-  Examples
-    $ journal I learned how to create a CLI
-    $ journal --key Mrq5wMtD1yMX6gh694ORhgtxaYZtkAFWX3pko4Do // This is a dummy key
-    $ journal --list
+	👁 Examples:
+	  $ journal --key Mrq5wMtD1yMX6gh694ORhgtxaYZtkAFWX3pko4Do
+	  $ journal --api https://myjournapiinstance.com/api
+	  $ journal I learned how to create a CLI
 ```
