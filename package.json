@@ -1,39 +1,37 @@
 {
-	"name": "unicorn-fun-cli",
-	"version": "0.0.0",
-	"description": "My awesome command-line tool",
-	"license": "MIT",
-	"repository": "YOUR-GITHUB-USERNAME/unicorn-fun-cli",
-	"author": {
-		"name": "YOUR NAME",
-		"email": "YOUR EMAIL",
-		"url": "YOUR WEBSITE"
-	},
-	"bin": {
-		"unicorn-fun": "cli.js"
-	},
-	"engines": {
-		"node": ">=8"
-	},
-	"scripts": {
-		"test": "xo && ava"
-	},
-	"files": [
-		"cli.js"
-	],
-	"keywords": [
-		"cli",
-		"cli-app",
-		"unicorn",
-		"fun"
-	],
-	"dependencies": {
-		"meow": "^5.0.0",
-		"unicorn-fun": "^0.0.0"
-	},
-	"devDependencies": {
-		"ava": "^2.1.0",
-		"execa": "^2.0.0",
-		"xo": "^0.24.0"
-	}
+ "name": "journapi-cli",
+ "version": "1.0.0",
+ "description": "📓 Write your in your bullet journal through CLI",
+ "license": "MIT",
+ "repository": "Tahul/journapi-cli",
+ "author": {
+  "name": "Yaël GUILLOUX",
+  "email": "yael@ipseity.fr",
+  "url": "https://yael.dev"
+ },
+ "bin": {
+  "journal": "cli.js"
+ },
+ "engines": {
+  "node": ">=8"
+ },
+ "files": [
+  "cli.js"
+ ],
+ "keywords": [
+  "cli",
+  "cli-app",
+  "journapi",
+  "bullet-journal",
+  "dev-journal",
+  "journal"
+ ],
+ "dependencies": {
+  "axios": "^0.19.2",
+  "iconv-lite": "^0.5.1",
+  "meow": "^5.0.0",
+  "moment": "^2.25.3",
+  "opn": "^6.0.0",
+  "terminal-kit": "^1.35.2"
+ }
 }
