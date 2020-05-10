@@ -1,6 +1,19 @@
-# journapi-cli
+<h1 align="center">
+    <img align="content-center" src="https://journapi.app/images/logo.svg" />
+    Journapi CLI
+</h1>
 
-> Write your in your bullet journal through CLI 👨‍💻
+Write your in your bullet journal through CLI. 👨‍💻
+
+This is my first CLI, if you have any advice, you can open an issue! :)
+
+## Stack
+
+I'm using the following libraries:
+- [NodeJS CLI Boilerplate](https://github.com/sindresorhus/node-cli-boilerplate)
+- [Meow](https://github.com/sindresorhus/meow)
+- [Terminal Kit](https://www.npmjs.com/package/terminal-kit)
+- [Axios](https://github.com/axios/axios)
 
 ## Install
 
@@ -27,3 +40,9 @@ $ journal --help
 	  $ journal --api https://myjournapiinstance.com/api // Your self-hosted URL; the default is already set.
 	  $ journal I learned how to create a CLI
 ```
+
+##🔗 Others links
+
+- 🎩 [Alfred Workflow](https://www.notion.so/Journapi-Alfred-workflow-5af3174c7e174b9d8f9a823570dd529b)
+- ⌨️ [The API](https://github.com/Tahul/journapi)
+- 🐦 [Twitter](https://twitter.com/yaeeelglx)
